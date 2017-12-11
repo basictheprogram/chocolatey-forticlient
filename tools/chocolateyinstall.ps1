@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'; 
 
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'C:\dropbox\Fortigate\FortiClientSetup_5.6.2.1117'
+$url        = 'C:\dropbox\Fortigate\FortiClientSetup_5.6.2.1117.zip'
 $checksum   = '86f2c9531b1a5471a2d6542e7c9097139d2951cf88c36535883ee89953fd68e1'
 $url64      = 'C:\dropbox\Fortigate\FortiClientSetup_5.6.2.1117_x64.zip'
 $checksum64 = '1833ae0bf8ce3267a2a5c3d976fd6a04cd467a9bcd95f08352c2f616d7c04125'
