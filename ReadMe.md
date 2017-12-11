@@ -6,6 +6,17 @@ https://github.com/chocolatey/choco/wiki/CommandsSources
 Own chocolatey package server
 https://chocolatey.org/blog/host-your-own-server
 
+### Repository URLs
+
+In the package manager settings, add the following URL to the list of Package Sources:
+http://solidworks.int.celadonsystems.com/chocolatey
+
+Use the command below to push packages to this feed using chocolatey (choco.exe).
+choco push [{package file}] --source="http://solidworks.int.celadonsystems.com/" [--api-key={apikey}]
+
+You can set the ApiKey for this repository with
+choco setapikey --source="http://solidworks.int.celadonsystems.com/" --api-key={apikey}
+
 ## Everything below is boilerplate
 
 ## Summary
@@ -140,4 +151,3 @@ The following are experimental or use not recommended:
  * http_proxy - Set by original `http_proxy` passthrough, or same as `ChocolateyProxyLocation` if explicitly set. (0.10.4+)
  * https_proxy - Set by original `https_proxy` passthrough, or same as `ChocolateyProxyLocation` if explicitly set. (0.10.4+)
  * no_proxy- Set by original `no_proxy` passthrough, or same as `ChocolateyProxyBypassList` if explicitly set. (0.10.4+)
-
