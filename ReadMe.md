@@ -1,4 +1,14 @@
-﻿## Summary
+﻿## My random comments
+
+Add new source to chocolatey
+https://github.com/chocolatey/choco/wiki/CommandsSources
+
+Own chocolatey package server
+https://chocolatey.org/blog/host-your-own-server
+
+## Everything below is boilerplate
+
+## Summary
 How do I create packages? See https://chocolatey.org/docs/create-packages
 
 If you are submitting packages to the community feed (https://chocolatey.org)
