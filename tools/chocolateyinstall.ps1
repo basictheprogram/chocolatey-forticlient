@@ -1,10 +1,12 @@
 ﻿$ErrorActionPreference = 'Stop'; 
 
-$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$file       = Join-Path $toolsDir 'FortiClientSetup_5.6.2.1117.zip'
-$checksum   = '86f2c9531b1a5471a2d6542e7c9097139d2951cf88c36535883ee89953fd68e1'
-$file64     = Join-Path $toolsDir 'FortiClientSetup_5.6.2.1117_x64.zip'
-$checksum64 = '1833ae0bf8ce3267a2a5c3d976fd6a04cd467a9bcd95f08352c2f616d7c04125'
+$clientRelease = "5.6.3"
+$clientBuild   = "1130"
+$toolsDir      = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$file          = Join-Path $toolsDir 'FortiClientSetup_' + $clientRelease + '.' + $clientBuild + '.zip'
+$checksum      = '11d9a6456fc34c8e0a239474ef9ea7b08fd7a1b1a89f766175285a892f3e1e65'
+$file64        = Join-Path $toolsDir 'FortiClientSetup_' + $clientRelease + '.' + $clientBuild + '_x64.zip'
+$checksum64    = '28cb6d4298ce9f37bfb542bcc7a61d9cc3d43676206ac059cf51c146f7a3f0a3'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
