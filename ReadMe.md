@@ -15,10 +15,14 @@ Here's how to add it using a 1-line command:
 choco source add -n=“celadonsystems.com" -s="http://solidworks.int.celadonsystems.com/chocolatey”
 
 Use the command below to push packages to this feed using chocolatey (choco.exe).
-choco push [{package file}] --source="http://solidworks.int.celadonsystems.com/" [--api-key={apikey}]
+```
+choco push [{package file}] --source="http://solidworks.int.celadonsystems.com/" [--api-key={apikey}] --force
+```
 
 You can set the ApiKey for this repository with
+```
 choco setapikey --source="http://solidworks.int.celadonsystems.com/" --api-key={apikey}
+```
 
 ## Everything below is boilerplate
 
