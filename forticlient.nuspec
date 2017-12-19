@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>forticlient</id>
-    <version>5.6.3.20171214</version>
+    <version>5.6.3.20171219</version>
     <packageSourceUrl>https://d3gpjj9d20n0p3.cloudfront.net/forticlient/downloads/FortiClientOnlineInstaller.exe</packageSourceUrl>
     <owners>basictheprogram</owners>
     <title>FortiClient</title>
