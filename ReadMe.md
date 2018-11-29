@@ -9,19 +9,19 @@ https://chocolatey.org/blog/host-your-own-server
 ### Repository URLs
 
 In the package manager settings, add the following URL to the list of Package Sources:
-http://solidworks.int.celadonsystems.com/chocolatey
+http://solidworks.int.company.com/chocolatey
 
 Here's how to add it using a 1-line command:
-choco source add -n=“celadonsystems.com" -s="http://solidworks.int.celadonsystems.com/chocolatey”
+choco source add -n=“company.com" -s="http://solidworks.int.company.com/chocolatey”
 
 Use the command below to push packages to this feed using chocolatey (choco.exe).
 ```
-choco push [{package file}] --source="http://solidworks.int.celadonsystems.com/" [--api-key={apikey}] --force
+choco push [{package file}] --source="http://solidworks.int.company.com/" [--api-key={apikey}] --force
 ```
 
 You can set the ApiKey for this repository with
 ```
-choco setapikey --source="http://solidworks.int.celadonsystems.com/" --api-key={apikey}
+choco setapikey --source="http://solidworks.int.company.com/" --api-key={apikey}
 ```
 
 ## Everything below is boilerplate
