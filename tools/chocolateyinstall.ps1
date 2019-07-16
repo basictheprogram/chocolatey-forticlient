@@ -1,14 +1,16 @@
 ﻿$ErrorActionPreference = 'Stop'; 
 
-$clientRelease = "5.6.3"
-$clientBuild   = "1130"
+# Download client zip files from https://support.fortinet.com/Download/FirmwareImages.aspx
+#
+$clientRelease = "6.0.5"
+$clientBuild   = "0209"
 $pkg32         = 'FortiClientSetup_' + $clientRelease + '.' + $clientBuild + '.zip'
 $pkg64         = 'FortiClientSetup_' + $clientRelease + '.' + $clientBuild + '_x64.zip'
 $toolsDir      = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $file          = Join-Path $toolsDir $pkg32
-$checksum      = '11d9a6456fc34c8e0a239474ef9ea7b08fd7a1b1a89f766175285a892f3e1e65'
+$checksum      = 'a0ebdf38275693f592ca257079c076b1e07d49c702ffcd62f33536856ab189f7'
 $file64        = Join-Path $toolsDir $pkg64
-$checksum64    = '28cb6d4298ce9f37bfb542bcc7a61d9cc3d43676206ac059cf51c146f7a3f0a3'
+$checksum64    = '2e9259431724cfad01641f6548c2a178b4cb577f4e7130118df93e4b31b6a96b'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
@@ -26,7 +28,10 @@ $packageArgs = @{
 Install-ChocolateyZipPackage @packageArgs 
 
 # https://forum.fortinet.com/tm.aspx?m=150054
-
+#
+# Installing FortiClient using the CLI
+# http://bit.ly/2Myohec
+#
 $installArgs = @{
   packageName    = $env:ChocolateyPackageName
   file           = Join-Path $toolsDir 'FortiClient.msi'

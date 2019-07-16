@@ -2,18 +2,18 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>forticlient</id>
-    <version>5.6.3.20180520</version>
-    <packageSourceUrl>https://d3gpjj9d20n0p3.cloudfront.net/forticlient/downloads/FortiClientOnlineInstaller.exe</packageSourceUrl>
+    <version>6.0.5.0209</version>
+    <packageSourceUrl>https://filestore.fortinet.com/forticlient/downloads/FortiClientOnlineInstaller_6.0.0.exe</packageSourceUrl>
     <owners>basictheprogram</owners>
     <title>FortiClient</title>
     <authors>Fortinet, Inc.</authors>
     <projectUrl>https://www.forticlient.com</projectUrl>
     <iconUrl>http://cdn.rawgit.com/basictheprogram/chocolatey-forticlient/master/icons/forticlient.png</iconUrl>
-    <copyright>Copyright © 2017 Fortinet, Inc. All Rights Reserved</copyright>
-    <licenseUrl>https://www.fortinet.com/corporate/about-us/legal.html</licenseUrl>
+    <copyright>Copyright © 2003-2018 Fortinet, Inc.</copyright>
+    <licenseUrl>https://www.fortinet.com/content/dam/fortinet/assets/legal/EULA.pdf</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
-    <docsUrl>http://help.fortinet.com/fclient/olh/5-4-4/index.htm</docsUrl>
+    <docsUrl>https://docs.fortinet.com/forticlient/admin-guides</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
     <!--<bugTrackerUrl></bugTrackerUrl>-->
     <tags>forticlient vpn antivirus web filtering firewall 2-factor authentication vulnerability scan</tags>
@@ -23,7 +23,7 @@
     assessment, and more. FortiClient is fully integrated with FortiClient EMS, FortiGate, FortiManager, 
     and FortiAnalyzer for management, monitoring, and central logging/reporting. FortiClient Enterprise Management 
     Server (EMS) simplifies end-to-end endpoint deployment, registration, management, and monitoring for FortiClients.</description>
-    <releaseNotes>https://docs.fortinet.com/d/forticlient-5.4.4-windows-release-notes</releaseNotes>
+    <releaseNotes>http://help.fortinet.com/fclient/olh/6-0-0/FortiClient-6.0-Admin/000_ChangeLog.htm</releaseNotes>
 
   </metadata>
   <files>
