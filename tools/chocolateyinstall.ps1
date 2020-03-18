@@ -2,15 +2,15 @@
 
 # Download client zip files from https://support.fortinet.com/Download/FirmwareImages.aspx
 #
-$clientRelease = "6.0.5"
-$clientBuild   = "0209"
-$pkg32         = 'FortiClientSetup_' + $clientRelease + '.' + $clientBuild + '.zip'
-$pkg64         = 'FortiClientSetup_' + $clientRelease + '.' + $clientBuild + '_x64.zip'
-$toolsDir      = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$file          = Join-Path $toolsDir $pkg32
-$checksum      = 'a0ebdf38275693f592ca257079c076b1e07d49c702ffcd62f33536856ab189f7'
-$file64        = Join-Path $toolsDir $pkg64
-$checksum64    = '2e9259431724cfad01641f6548c2a178b4cb577f4e7130118df93e4b31b6a96b'
+$clientRelease = "6.0.9"
+$clientBuild = "0277"
+$pkg32 = 'FortiClientSetup_' + $clientRelease + '.' + $clientBuild + '.zip'
+$pkg64 = 'FortiClientSetup_' + $clientRelease + '.' + $clientBuild + '_x64.zip'
+$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$file = Join-Path $toolsDir $pkg32
+$checksum = '8c2c98de14d0a80fb42b249e3a51340b431a769812bf60af4b5dc220b57a410e'
+$file64 = Join-Path $toolsDir $pkg64
+$checksum64 = 'a76bce60e9bc938f16a593474de34ba79c1ce50768419299b7b8c8d1cbf7af4a'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
