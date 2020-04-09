@@ -1,14 +1,16 @@
 ﻿$ErrorActionPreference = 'Stop'; 
 
-$clientRelease = "5.6.3"
-$clientBuild   = "1130"
-$pkg32         = 'FortiClientSetup_' + $clientRelease + '.' + $clientBuild + '.zip'
-$pkg64         = 'FortiClientSetup_' + $clientRelease + '.' + $clientBuild + '_x64.zip'
-$toolsDir      = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$file          = Join-Path $toolsDir $pkg32
-$checksum      = '11d9a6456fc34c8e0a239474ef9ea7b08fd7a1b1a89f766175285a892f3e1e65'
-$file64        = Join-Path $toolsDir $pkg64
-$checksum64    = '28cb6d4298ce9f37bfb542bcc7a61d9cc3d43676206ac059cf51c146f7a3f0a3'
+# Download client zip files from https://support.fortinet.com/Download/FirmwareImages.aspx
+#
+$clientRelease = "6.0.9"
+$clientBuild = "0277"
+$pkg32 = 'FortiClientSetup_' + $clientRelease + '.' + $clientBuild + '.zip'
+$pkg64 = 'FortiClientSetup_' + $clientRelease + '.' + $clientBuild + '_x64.zip'
+$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$file = Join-Path $toolsDir $pkg32
+$checksum = '8c2c98de14d0a80fb42b249e3a51340b431a769812bf60af4b5dc220b57a410e'
+$file64 = Join-Path $toolsDir $pkg64
+$checksum64 = 'a76bce60e9bc938f16a593474de34ba79c1ce50768419299b7b8c8d1cbf7af4a'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
@@ -26,7 +28,10 @@ $packageArgs = @{
 Install-ChocolateyZipPackage @packageArgs 
 
 # https://forum.fortinet.com/tm.aspx?m=150054
-
+#
+# Installing FortiClient using the CLI
+# http://bit.ly/2Myohec
+#
 $installArgs = @{
   packageName    = $env:ChocolateyPackageName
   file           = Join-Path $toolsDir 'FortiClient.msi'
