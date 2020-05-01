@@ -8,7 +8,7 @@
     <title>FortiClient</title>
     <authors>Fortinet, Inc.</authors>
     <projectUrl>https://www.forticlient.com</projectUrl>
-    <iconUrl>http://basictheprogram.github.io/chocolatey-forticlient/master/icons/forticlient.png</iconUrl>
+    <iconUrl>http://basictheprogram.github.io/chocolatey-forticlient/icons/forticlient.png</iconUrl>
     <copyright>Copyright © 2003-2020 Fortinet, Inc.</copyright>
     <licenseUrl>https://www.fortinet.com/content/dam/fortinet/assets/legal/EULA.pdf</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
