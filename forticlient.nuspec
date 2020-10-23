@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <id>forticlient</id>
-    <version>6.0.9.0277</version>
+    <version>6.4.1.1519</version>
     <packageSourceUrl>https://github.com/basictheprogram/chocolatey-forticlient</packageSourceUrl>
     <owners>basictheprogram</owners>
     <title>FortiClient</title>
@@ -12,16 +12,15 @@
     <copyright>Copyright © 2003-2020 Fortinet, Inc.</copyright>
     <licenseUrl>https://www.fortinet.com/content/dam/fortinet/assets/legal/EULA.pdf</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <!--<projectSourceUrl>Software Source Location - is the software FOSS somewhere? Link to it with this</projectSourceUrl>-->
     <docsUrl>https://docs.fortinet.com/forticlient/admin-guides</docsUrl>
     <!--<mailingListUrl></mailingListUrl>-->
-    <!--<bugTrackerUrl></bugTrackerUrl>-->
+    <bugTrackerUrl>https://support.fortinet.com</bugTrackerUrl>
     <tags>forticlient vpn antivirus web filtering firewall 2-factor authentication vulnerability scan</tags>
     <summary>FortiClient is an all-in-one comprehensive endpoint security solution</summary>
-    <description>FortiClient is a unified security offering designed for PCs, laptops, tablets, and mobile devices. 
-    Features include SSL and IPsec VPN, antivirus/anti-malware, web filtering, application firewall, vulnerability 
-    assessment, and more. FortiClient is fully integrated with FortiClient EMS, FortiGate, FortiManager, 
-    and FortiAnalyzer for management, monitoring, and central logging/reporting. FortiClient Enterprise Management 
+    <description>FortiClient is a unified security offering designed for PCs, laptops, tablets, and mobile devices.
+    Features include SSL and IPsec VPN, antivirus/anti-malware, web filtering, application firewall, vulnerability
+    assessment, and more. FortiClient is fully integrated with FortiClient EMS, FortiGate, FortiManager,
+    and FortiAnalyzer for management, monitoring, and central logging/reporting. FortiClient Enterprise Management
     Server (EMS) simplifies end-to-end endpoint deployment, registration, management, and monitoring for FortiClients.</description>
     <releaseNotes>http://help.fortinet.com/fclient/olh/6-0-0/FortiClient-6.0-Admin/000_ChangeLog.htm</releaseNotes>
 
